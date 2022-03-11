@@ -1,13 +1,103 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: hsl(210, 36%, 96%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+main {
+    width: 90vw;
+    max-width: 620px;;
+    margin: 5rem auto;
+}
+
+.loading {
+    text-align: center;
+}
+
+.btn {
+    background-color: hsl(205, 95%, 64%);
+    border-radius: 0.25rem;
+    color: #fff;
+    text-transform: capitalize;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.underline {
+    width: 6rem;
+    height: 0.25rem;
+    background: hsl(205, 95%, 64%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.tour-info h4 {
+    margin-bottom: 0;
+}
+
+.tour-info .tour-price {
+    color: hsl(205, 95%, 64%);
+}
+
+.single-tour {
+    background-color: #fff;
+    margin: 2rem auto;
+}
+
+.single-tour footer {
+    padding: 1.5rem 2rem;
+}
+
+.single-tour img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.single-tour .delete-btn {
+    display: block;
+    color: hsl(360, 67%, 44%);
+    background: transparent;
+    padding: 0.25rem 0.5rem;
+    width: 200px;
+    border: 1px solid hsl(360, 67%, 44%);
+    border-radius: 0.25rem;
+    margin: 1rem auto 0 auto;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.single-tour .read-more-less-btn {
+    color: hsl(205, 95%, 64%);
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 0.25rem;
 }
